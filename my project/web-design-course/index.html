@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAVAI ACADEMY - Master Professional Web Designing</title>
+  <meta name="description"
+    content="Embark on an immersive web design coding journey at PAVAI ACADEMY in Mayiladuthurai. Learn HTML, CSS, JS, jQuery, Bootstrap, and Cloud Hosting.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Background Animated Glow Effect -->
+  <div class="glow-mesh" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Header Navigation --
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo" id="navLogo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M2 17L12 22L22 17" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M2 12L12 17L22 12" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <defs>
+            <linearGradient id="logoGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#8b5cf6" />
+              <stop offset="1" stop-color="#06b6d4" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>PAVAI</span>ACADEMY
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul id="navList">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#curriculum">Curriculum</a></li>
+          <li><a href="#trainer">Trainer</a></li>
+          <li><a href="#interactive">Practice Sandbox</a></li>
+          <li><a href="#cta">Enroll Now</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburgerMenu" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main>
+
+    <!-- Hero Showcase Section -->
+    <section class="hero" id="heroSection">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1>Master Professional <br><span class="primary-gradient-text">Web Designing</span></h1>
+          <p>Embark on an immersive coding journey at <strong>PAVAI ACADEMY</strong>. Learn core frontend technologies,
+            build stunning interactive interfaces, configure hosting setups, and deploy live websites directly to the
+            cloud.</p>
+
+          <!-- Quick Info Badge -->
+          <div
+            style="display: inline-flex; align-items: center; gap: 8px; background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.2); padding: 8px 16px; border-radius: 30px; margin-bottom: 24px; font-size: 0.9rem; color: #cbd5e1;">
+            <span style="color: var(--color-secondary); font-weight: 700;">⚡ Training Mode:</span> Classroom & Practical
+            Labs in Mayiladuthurai
+          </div>
+
+          <div class="hero-actions">
+            <a href="#curriculum" class="btn btn-primary" id="btnExplore">Explore Curriculum</a>
+            <a href="#trainer" class="btn btn-secondary" id="btnTrainer">Meet Senior Trainer</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-val" id="statDuration">12+</span>
+              <span class="stat-lbl">Weeks Training</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val" id="statProjects">8+</span>
+              <span class="stat-lbl">Hands-on Labs</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val" id="statRating">100%</span>
+              <span class="stat-lbl">Practical Focus</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="glass-card hero-graphic-card" id="heroVisualCard">
+            <div class="card-header-dots">
+              <span class="dot dot-r"></span>
+              <span class="dot dot-y"></span>
+              <span class="dot dot-g"></span>
+            </div>
+            <div class="hero-code-block">
+              <span class="code-keyword">const</span> academy = {<br>
+              &nbsp;&nbsp;name: <span class="code-string">"PAVAI ACADEMY"</span>,<br>
+              &nbsp;&nbsp;trainer: <span class="code-string">"M. ENBATHAMIAZHAN"</span>,<br>
+              &nbsp;&nbsp;location: <span class="code-string">"Mayiladuthurai"</span>,<br>
+              &nbsp;&nbsp;syllabus: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>,
+              <span class="code-string">"JS"</span>, <span class="code-string">"jQuery"</span>, <span
+                class="code-string">"Bootstrap"</span>, <span class="code-string">"Hosting"</span>]<br>
+              };
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;">
+              Designed for career success. Get mentored directly by our senior expert in high-tech programming lab.
+            </p>
+            <div
+              style="background-color: rgba(255,255,255,0.03); border-radius: 8px; padding: 12px; border: 1px solid var(--border-glass); font-size: 0.82rem; display: flex; align-items: center; justify-content: space-between;">
+              <span style="color: var(--text-secondary);">Batch Registration</span>
+              <span style="color: var(--color-secondary); font-weight:600;">Open &nbsp;🟢</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curriculum Grid Section -->
+    <section class="curriculum" id="curriculum">
+      <div class="section-header">
+        <h2 class="gradient-text">Course Curriculum Pathway</h2>
+        <p>Explore the comprehensive step-by-step syllabus prepared specifically to transition students into skilled
+          designers.</p>
+      </div>
+
+      <div class="course-grid">
+
+        <!-- HTML Card -->
+        <article class="glass-card course-card" data-id="html" id="cardHTML">
+          <div class="course-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3>HTML5 Structure</h3>
+          <p>Understand semantic elements, tags, document outline, form validation, nested elements, table templates,
+            and page metadata.</p>
+          <div class="course-meta">
+            <span>Duration: 2 Weeks</span>
+            <span class="course-action">Syllabus &rarr;</span>
+          </div>
+        </article>
+
+        <!-- CSS Card (sec) -->
+        <article class="glass-card course-card" data-id="css" id="cardCSS">
+          <div class="course-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z">
+              </path>
+              <path
+                d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z">
+              </path>
+            </svg>
+          </div>
+          <h3>CSS3 & Security (SEC)</h3>
+          <p>Master selectors, cascade rules, flexbox, CSS grids, transforms, responsive media queries, and basic web
+            security coding audits.</p>
+          <div class="course-meta">
+            <span>Duration: 3 Weeks</span>
+            <span class="course-action">Syllabus &rarr;</span>
+          </div>
+        </article>
+
+        <!-- Bootstrap Card -->
+        <article class="glass-card course-card" data-id="bootstrap" id="cardBootstrap">
+          <div class="course-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="9" y1="9" x2="15" y2="9"></line>
+              <line x1="9" y1="15" x2="15" y2="15"></line>
+              <line x1="12" y1="9" x2="12" y2="15"></line>
+            </svg>
+          </div>
+          <h3>Bootstrap 5 Framework</h3>
+          <p>Rapidly build responsive grid layouts, custom navigation components, styled cards, modals, and helper
+            utilities.</p>
+          <div class="course-meta">
+            <span>Duration: 1.5 Weeks</span>
+            <span class="course-action">Syllabus &rarr;</span>
+          </div>
+        </article>
+
+        <!-- JavaScript Card -->
+        <article class="glass-card course-card" data-id="javascript" id="cardJavaScript">
+          <div class="course-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 18l6-6-6-6M8 6L2 12l6 6"></path>
+              <line x1="10" y1="18" x2="14" y2="6"></line>
+            </svg>
+          </div>
+          <h3>JavaScript Logic</h3>
+          <p>Program interactive behaviors using logic gates, functions, variables, arrays, objects, event bindings, and
+            DOM trees.</p>
+          <div class="course-meta">
+            <span>Duration: 4 Weeks</span>
+            <span class="course-action">Syllabus &rarr;</span>
+          </div>
+        </article>
+
+        <!-- jQuery Card -->
+        <article class="glass-card course-card" data-id="jquery" id="cardJQuery">
+          <div class="course-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            </svg>
+          </div>
+          <h3>jQuery Library</h3>
+          <p>Learn selectors, event handling, toggle sliders, slide triggers, fade effects, and background asynchronous
+            operations.</p>
+          <div class="course-meta">
+            <span>Duration: 1 Week</span>
+            <span class="course-action">Syllabus &rarr;</span>
+          </div>
+        </article>
+
+        <!-- Web Hosting Card -->
+        <article class="glass-card course-card" data-id="web-hosting" id="cardWebHosting">
+          <div class="course-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              <line x1="12" y1="11" x2="12" y2="17"></line>
+              <line x1="9" y1="14" x2="15" y2="14"></line>
+            </svg>
+          </div>
+          <h3>Web Cloud Hosting</h3>
+          <p>Learn domain name routing, DNS records setup, FTP transfers, HTTPS setup, SSL keys, and server dashboard
+            console configs.</p>
+          <div class="course-meta">
+            <span>Duration: 1 Week</span>
+            <span class="course-action">Syllabus &rarr;</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Senior Trainer Showcase Section -->
+    <section class="trainer-section" id="trainer">
+      <div class="section-header">
+        <h2 class="gradient-text">Meet Your Senior Trainer</h2>
+        <p>Learn web designing under direct coaching and mentorship from our industry veteran.</p>
+      </div>
+
+      <div class="trainer-container">
+        <div class="glass-card trainer-card">
+          <div class="trainer-profile">
+            <!-- Profile Info and Badge -->
+            <div class="trainer-avatar-container">
+              <div class="trainer-avatar">
+                <span>ME</span>
+              </div>
+              <span class="trainer-badge">Senior Trainer</span>
+            </div>
+
+            <div class="trainer-bio">
+              <h3>M. ENBATHAMIAZHAN</h3>
+              <p class="trainer-title">Senior Web Development & Layout Design Specialist</p>
+              <p class="trainer-description">
+                With a passion for educating the next generation of engineers, M. ENBATHAMIAZHAN delivers
+                standard-driven, hands-on training at PAVAI ACADEMY. He specializes in core semantic structures, modular
+                layout engineering, robust jQuery micro-behaviors, and secure cloud publishing.
+              </p>
+
+              <div class="trainer-details-grid">
+                <div class="trainer-stat-badge">
+                  <strong>10+ Years</strong>
+                  <span>Experience</span>
+                </div>
+                <div class="trainer-stat-badge">
+                  <strong>500+</strong>
+                  <span>Students Trained</span>
+                </div>
+                <div class="trainer-stat-badge">
+                  <strong>100%</strong>
+                  <span>Lab Oriented</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practice Section: Live Editor & Student Dashboard -->
+    <section class="interactive-section" id="interactive">
+      <div class="section-header">
+        <h2 class="gradient-text">Interactive Learning Suite</h2>
+        <p>Write raw HTML and CSS layout code inside the editor below to preview compiler renderings instantly.</p>
+      </div>
+
+      <div class="interactive-grid">
+
+        <!-- Live Code Sandbox Card -->
+        <div class="glass-card sandbox-card" id="sandboxCard">
+          <div class="sandbox-header">
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2Z"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              Live Editor Sandbox
+            </h3>
+            <span class="sandbox-badge">Real-time Compiler</span>
+          </div>
+          <div class="sandbox-container">
+            <div class="sandbox-editor-wrapper">
+              <textarea id="sandboxEditor" class="sandbox-editor" spellcheck="false"
+                aria-label="HTML and CSS code editor sandbox"></textarea>
+            </div>
+            <div class="sandbox-preview" id="sandboxPreview">
+              <iframe id="sandboxPreviewFrame" title="Real-time HTML/CSS code compilation viewer output frame"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Student Progress & Quiz Dashboard Card -->
+        <div class="glass-card dashboard-card" id="dashboardCard">
+          <div class="dashboard-header">
+            <h3>Student Learning Progress Console</h3>
+            <p style="color: var(--text-secondary); font-size: 0.88rem;">Complete lessons and pass topic quizzes below
+              to unlock your course certification pathways.</p>
+          </div>
+
+          <div class="progress-container">
+            <div class="progress-info">
+              <span class="progress-label" id="progressLabel">Dashboard Initialized. Select a module</span>
+              <span class="progress-percent" id="progressPercentText">0%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" id="progressFill"></div>
+            </div>
+          </div>
+
+          <!-- Quiz Dynamic Area -->
+          <div class="quiz-wrapper" id="quizWrapper">
+            <div>
+              <div class="quiz-question-num" id="quizQuestionNum">Question 1 of 6</div>
+              <div class="quiz-question" id="quizQuestion">Loading quiz questions data...</div>
+              <div class="quiz-options" id="quizOptions">
+                <!-- Javascript will load button choices here -->
+              </div>
+            </div>
+            <div class="quiz-footer">
+              <div class="quiz-feedback" id="quizFeedback"></div>
+              <button class="btn btn-primary" id="submitQuizBtn" disabled>Submit Answer</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta" id="cta">
+      <div class="glass-card cta-card" id="ctaCard">
+        <div class="cta-content">
+          <h2>Ready to Launch Your Career?</h2>
+          <p>Join the next training batch at PAVAI ACADEMY in Mayiladuthurai. Gain hands-on expertise from M.
+            ENBATHAMIAZHAN and start building production-ready portals.</p>
+
+          <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
+            <div
+              style="text-align: left; background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); padding: 15px 24px; border-radius: var(--radius-sm); max-width: 320px;">
+              <span
+                style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 4px;">Academy
+                Address</span>
+              <strong style="font-size: 0.95rem; color: white; line-height: 1.4; display: block;">
+                PAVAI ACADEMY,<br>
+                New Street, Mayiladuthurai - 609 109
+              </strong>
+            </div>
+            <div
+              style="text-align: left; background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); padding: 15px 24px; border-radius: var(--radius-sm); max-width: 320px;">
+              <span
+                style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 4px;">Trainer
+                Mentorship</span>
+              <strong style="font-size: 0.95rem; color: var(--color-secondary); line-height: 1.4; display: block;">
+                M. ENBATHAMIAZHAN<br>
+                Senior Trainer & Advisor
+              </strong>
+            </div>
+          </div>
+
+          <a href="#newsletterForm" class="btn btn-primary" style="padding: 16px 36px; font-size: 1.05rem;"
+            id="btnEnrollNow">Inquire About Fees & Batches</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Sidebar Details Syllabus Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-labelledby="drawerTitle">
+    <div class="drawer-header">
+      <h3 id="drawerTitle" style="font-size: 1.4rem;">Syllabus Module Details</h3>
+      <button class="drawer-close" id="drawerClose" aria-label="Close details view">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <p id="drawerDescription" style="color: var(--text-secondary); margin-bottom: 24px; font-size: 0.95rem;"></p>
+
+      <div
+        style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 30px; background-color: rgba(0,0,0,0.2); border: 1px solid var(--border-glass); border-radius: 8px; padding: 16px;">
+        <div>
+          <span
+            style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); display: block;">Duration</span>
+          <strong id="drawerDuration" style="font-size: 0.95rem; color: white;"></strong>
+        </div>
+        <div>
+          <span
+            style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); display: block;">Difficulty</span>
+          <strong id="drawerDifficulty" style="font-size: 0.95rem; color: white;"></strong>
+        </div>
+        <div
+          style="grid-column: span 2; border-top: 1px solid var(--border-glass); padding-top: 12px; margin-top: 4px;">
+          <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); display: block;">Core
+            Project Build</span>
+          <strong id="drawerProject" style="font-size: 0.95rem; color: var(--color-secondary);"></strong>
+        </div>
+      </div>
+
+      <h4
+        style="font-size: 1.05rem; border-bottom: 1px solid var(--border-glass); padding-bottom: 8px; margin-bottom: 16px;">
+        Syllabus Chapters</h4>
+      <ul class="drawer-syllabus-list" id="drawerSyllabusList">
+        <!-- Dynamically populated syllabus list items -->
+      </ul>
+    </div>
+  </aside>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#footerLogoGrad)" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M2 17L12 22L22 17" stroke="url(#footerLogoGrad)" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <defs>
+              <linearGradient id="footerLogoGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8b5cf6" />
+                <stop offset="1" stop-color="#06b6d4" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>PAVAI</span>ACADEMY
+        </a>
+        <p style="margin-top: 16px; color: var(--text-secondary); font-size: 0.9rem;">
+          Specialized design and engineering school in Tamil Nadu. Practical classroom labs with 1-on-1 trainer
+          guidance.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Academy Links</h4>
+        <ul>
+          <li><a href="#curriculum">Curriculum</a></li>
+          <li><a href="#trainer">Meet Trainer</a></li>
+          <li><a href="#interactive">Practice Sandbox</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Our Campus</h4>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; margin-bottom: 8px;">
+          <strong>PAVAI ACADEMY</strong><br>
+          New Street,<br>
+          Mayiladuthurai - 609 109
+        </p>
+      </div>
+
+      <div class="footer-subscribe">
+        <h4>Admissions Inquiry</h4>
+        <p>Submit your email to receive syllabus brochure and batch schedules.</p>
+        <form class="subscribe-form"
+          onsubmit="event.preventDefault(); alert('Inquiry received! We will contact you soon.'); this.reset();"
+          id="newsletterForm">
+          <input type="email" class="subscribe-input" placeholder="Your Email address"
+            aria-label="Email address for admission query" required>
+          <button type="submit" class="btn btn-primary" style="padding: 12px 20px;">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 PAVAI ACADEMY. All rights reserved. Under mentorship of M. ENBATHAMIAZHAN.</span>
+      <div style="display: flex; gap: 24px;">
+        <a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a>
+        <a href="#" style="color: var(--text-muted); text-decoration: none;">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 1. Mobile Navigation Hamburger Menu
+    const hamburger = document.getElementById('hamburgerMenu');
+    const navList = document.getElementById('navList');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navList.classList.toggle('mobile-active');
+    });
+    navList.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navList.classList.remove('mobile-active');
+      });
+    });
+
+    // 2. Syllabus Database Catalog
+    const syllabusData = {
+      "html": {
+        title: "HTML5 Semantic Structure",
+        description: "Learn to build semantic, accessible, and structured web layouts that form the bedrock of the modern web.",
+        duration: "2 Weeks",
+        difficulty: "Beginner",
+        project: "Semantic Portfolio & Multi-page Resume Portal",
+        chapters: [
+          "Web Architecture, Browsers, and HTTP Fundamentals",
+          "Semantic Tags (header, nav, article, section, footer, aside)",
+          "Nested Lists, Hyperlinks, and Anchor Navigation",
+          "Table Templates and Data Groupings",
+          "HTML5 Advanced Forms: Form validation, fieldsets, datalists, and custom controls",
+          "SEO Best Practices: Head tags, meta descriptions, open graph, and link structures"
+        ]
+      },
+      "css": {
+        title: "CSS3 & Design Architecture (SEC)",
+        description: "Style layouts elegantly with custom visual properties, responsive rules, grids, and flexboxes.",
+        duration: "3 Weeks",
+        difficulty: "Intermediate",
+        project: "Sleek Glassmorphic Multi-page Landing Page",
+        chapters: [
+          "Selectors Cascade, Specificity, and Inheritance rules",
+          "Box Model, Margins collapse, and Layout positioning models",
+          "Flexbox Engineering: Alignment, spacing, and directions",
+          "CSS Grid Mastery: Templates, repeat, auto-fit, and area definitions",
+          "Transforms, Transitions, and Custom Keyframe Animations",
+          "Media Queries and Mobile-first Design strategies",
+          "Security audits: Sanity validations and injection prevention in inputs"
+        ]
+      },
+      "bootstrap": {
+        title: "Bootstrap 5 Framework",
+        description: "Learn to build responsive web pages in record time using modern utility classes, grid systems, and components.",
+        duration: "1.5 Weeks",
+        difficulty: "Beginner-Intermediate",
+        project: "Interactive Business Dashboard & Admin Console Template",
+        chapters: [
+          "CDN integration vs local installation setups",
+          "Bootstrap 12-column Grid, Gutters, and Row controls",
+          "Utility Classes: Flexbox helpers, spacing values, display parameters",
+          "Pre-styled UI Components: Modals, dropdowns, cards, accordions, and navbars",
+          "Customizing Bootstrap styles with root variables and overriding classes"
+        ]
+      },
+      "javascript": {
+        title: "JavaScript Programming & DOM",
+        description: "Inject client-side behavior, control structures, and handle event-driven architectures programmatically.",
+        duration: "4 Weeks",
+        difficulty: "Advanced",
+        project: "Task Manager App & Currency Converter with API Integration",
+        chapters: [
+          "Variables (let, const), Primitive Types, and Arrays",
+          "Control Structures: Loops, conditional statements, and logical gates",
+          "Functions: Expressions, arrow declarations, and scope block constraints",
+          "Data Objects: Properties, method functions, and literal setups",
+          "DOM Selection & Operations: Class additions, text manipulation, and node creation",
+          "Event Listeners: Mouse clicks, key presses, and submit event preventions"
+        ]
+      },
+      "jquery": {
+        title: "jQuery Micro-behaviors",
+        description: "Accelerate development using shorthand DOM animations, fading transitions, and AJAX requests.",
+        duration: "1 Week",
+        difficulty: "Intermediate",
+        project: "Interactive FAQ Drawer & Dynamic Content Loader",
+        chapters: [
+          "jQuery $ selectors, wrapper objects, and actions",
+          "Fading animations, toggle slides, and custom transitions",
+          "Traversing HTML nodes (parent, children, siblings, find)",
+          "Dynamic Event Binding and Event delegation",
+          "AJAX and JSON parsing: Loading local resources and APIs without page refresh"
+        ]
+      },
+      "web-hosting": {
+        title: "Web Cloud Hosting & FTP Setup",
+        description: "Deploy websites live to staging and production servers, manage DNS records, and secure your site using SSL certificates.",
+        duration: "1 Week",
+        difficulty: "Advanced",
+        project: "Production Launch of Course Portfolio under Custom Domain",
+        chapters: [
+          "Understanding domain names registry, DNS, and IP addresses",
+          "Configuring DNS Record sets: A records, CNAME aliases, MX servers",
+          "FTP client connections: Remote file setups and sync procedures",
+          "Securing networks: SSL/TLS certifications, HTTPS setups, and certificates",
+          "Production checklists: Minifying bundles, performance audits, and testing"
+        ]
+      }
+    };
+
+    // 3. Syllabus Dynamic Details Drawer Control
+    const drawer = document.getElementById('drawer');
+    const backdrop = document.getElementById('drawerBackdrop');
+    const drawerClose = document.getElementById('drawerClose');
+    const cards = document.querySelectorAll('.course-card');
+
+    function openDrawer(moduleId) {
+      const data = syllabusData[moduleId];
+      if (!data) return;
+
+      document.getElementById('drawerTitle').textContent = data.title;
+      document.getElementById('drawerDescription').textContent = data.description;
+      document.getElementById('drawerDuration').textContent = data.duration;
+      document.getElementById('drawerDifficulty').textContent = data.difficulty;
+      document.getElementById('drawerProject').textContent = data.project;
+
+      const list = document.getElementById('drawerSyllabusList');
+      list.innerHTML = '';
+      data.chapters.forEach((chapter, idx) => {
+        const li = document.createElement('li');
+        li.className = 'syllabus-item';
+        li.innerHTML = `
+          <span class="syllabus-num">${idx + 1}</span>
+          <div class="syllabus-item-content">
+            <h4>Chapter ${idx + 1}</h4>
+            <p>${chapter}</p>
+          </div>
+        `;
+        list.appendChild(li);
+      });
+
+      drawer.classList.add('active');
+      backdrop.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDrawer() {
+      drawer.classList.remove('active');
+      backdrop.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const id = card.getAttribute('data-id');
+        openDrawer(id);
+      });
+    });
+
+    drawerClose.addEventListener('click', closeDrawer);
+    backdrop.addEventListener('click', closeDrawer);
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeDrawer();
+    });
+
+    // 4. Code Sandbox Real-time Compiler
+    const editor = document.getElementById('sandboxEditor');
+    const preview = document.getElementById('sandboxPreviewFrame');
+
+    const defaultCode = `<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      text-align: center;
+      padding: 30px 20px;
+      background: #0b0c10;
+      color: #c7d2fe;
+    }
+    h2 {
+      background: linear-gradient(135deg, #a78bfa, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+    button {
+      background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h2>PAVAI ACADEMY Coding Sandbox</h2>
+  <p>Modify this source code and view changes instantly below.</p>
+  <button onclick="alert('Greetings from Mayiladuthurai!')">Trigger Event</button>
+</body>
+</html>`;
+
+    function updatePreview() {
+      const doc = preview.contentDocument || preview.contentWindow.document;
+      doc.open();
+      doc.write(editor.value);
+      doc.close();
+    }
+
+    if (editor && preview) {
+      editor.value = defaultCode;
+      updatePreview();
+      editor.addEventListener('input', updatePreview);
+    }
+
+    // 5. Student Learning Progress & Quiz Console
+    const quizQuestions = [
+      {
+        module: "html",
+        question: "Which HTML5 element represents self-contained content, such as a blog post or news article?",
+        options: ["<section>", "<article>", "<aside>", "<nav>"],
+        answer: 1,
+        feedback: "Correct! The <article> tag represents independent, self-contained layout elements."
+      },
+      {
+        module: "css",
+        question: "Which CSS layout method specifies placement along rows and columns for two-dimensional structures?",
+        options: ["Flexbox", "Float positioning", "CSS Grid Layout", "Absolute coordinates"],
+        answer: 2,
+        feedback: "Correct! CSS Grid excels at placing elements in dual layout coordinates (columns + rows)."
+      },
+      {
+        module: "bootstrap",
+        question: "What is the grid column count standard defined inside a row layout in Bootstrap 5?",
+        options: ["10 Columns", "12 Columns", "16 Columns", "8 Columns"],
+        answer: 1,
+        feedback: "Correct! Bootstrap layout is built on top of a highly responsive 12-column grid."
+      },
+      {
+        module: "javascript",
+        question: "Which declaration keyword establishes block-scoped variables that cannot be reassigned?",
+        options: ["var", "let", "const", "function"],
+        answer: 2,
+        feedback: "Correct! The const keyword creates block-scoped variable references that cannot be reassigned."
+      },
+      {
+        module: "jquery",
+        question: "Which jQuery API animates visibility transitions using dynamic panel height adjustments?",
+        options: ["fadeToggle()", "slideToggle()", "animate()", "toggle()"],
+        answer: 1,
+        feedback: "Correct! The slideToggle() method matches height calculations to collapse/expand elements."
+      },
+      {
+        module: "web-hosting",
+        question: "Which DNS mapping record connects a primary domain to an IPv4 host address directly?",
+        options: ["CNAME Record", "A Record", "TXT Metadata", "MX Record"],
+        answer: 1,
+        feedback: "Correct! The 'A' record (Address) maps domain host names to target IP addresses."
+      }
+    ];
+
+    let currentQuestionIndex = 0;
+    let score = 0;
+    let selectedOptionIndex = null;
+
+    const questionNumEl = document.getElementById('quizQuestionNum');
+    const questionEl = document.getElementById('quizQuestion');
+    const optionsEl = document.getElementById('quizOptions');
+    const submitBtn = document.getElementById('submitQuizBtn');
+    const feedbackEl = document.getElementById('quizFeedback');
+    const progressFill = document.getElementById('progressFill');
+    const progressPercentText = document.getElementById('progressPercentText');
+    const progressLabel = document.getElementById('progressLabel');
+
+    function loadQuestion() {
+      if (!questionEl || !optionsEl) return;
+      const q = quizQuestions[currentQuestionIndex];
+      questionNumEl.textContent = `Question ${currentQuestionIndex + 1} of ${quizQuestions.length}`;
+      questionEl.textContent = q.question;
+      optionsEl.innerHTML = '';
+      selectedOptionIndex = null;
+      submitBtn.disabled = true;
+      submitBtn.textContent = currentQuestionIndex === quizQuestions.length - 1 ? "Finish Quiz" : "Submit Answer";
+      feedbackEl.textContent = '';
+      feedbackEl.className = 'quiz-feedback';
+
+      q.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'quiz-option';
+        btn.textContent = opt;
+        btn.addEventListener('click', () => {
+          Array.from(optionsEl.children).forEach(child => child.classList.remove('selected'));
+          btn.classList.add('selected');
+          selectedOptionIndex = idx;
+          submitBtn.disabled = false;
+        });
+        optionsEl.appendChild(btn);
+      });
+    }
+
+    function updateProgress() {
+      if (!progressFill) return;
+      const percent = Math.round((currentQuestionIndex / quizQuestions.length) * 100);
+      progressFill.style.width = `${percent}%`;
+      progressPercentText.textContent = `${percent}%`;
+      if (percent === 100) {
+        progressLabel.textContent = `All Modules Completed! Final Score: ${score}/${quizQuestions.length}`;
+      } else {
+        const currentModule = quizQuestions[currentQuestionIndex].module.toUpperCase();
+        progressLabel.textContent = `Active Module: ${currentModule} Course Progress`;
+      }
+    }
+
+    if (submitBtn) {
+      submitBtn.addEventListener('click', () => {
+        const q = quizQuestions[currentQuestionIndex];
+
+        if (submitBtn.textContent === "Next Question" || submitBtn.textContent === "Restart Quiz") {
+          if (submitBtn.textContent === "Restart Quiz") {
+            currentQuestionIndex = 0;
+            score = 0;
+            loadQuestion();
+            updateProgress();
+          } else {
+            currentQuestionIndex++;
+            loadQuestion();
+            updateProgress();
+          }
+          return;
+        }
+
+        Array.from(optionsEl.children).forEach((child, idx) => {
+          child.disabled = true;
+          if (idx === q.answer) {
+            child.classList.add('correct');
+          }
+          if (idx === selectedOptionIndex && idx !== q.answer) {
+            child.classList.add('incorrect');
+          }
+        });
+
+        if (selectedOptionIndex === q.answer) {
+          score++;
+          feedbackEl.textContent = q.feedback;
+          feedbackEl.className = 'quiz-feedback correct-text';
+        } else {
+          feedbackEl.textContent = `Incorrect! The correct answer is: ${q.options[q.answer]}`;
+          feedbackEl.className = 'quiz-feedback incorrect-text';
+        }
+
+        if (currentQuestionIndex === quizQuestions.length - 1) {
+          submitBtn.textContent = "Restart Quiz";
+          progressFill.style.width = `100%`;
+          progressPercentText.textContent = `100%`;
+          progressLabel.textContent = `Quiz Finished! Final Score: ${score}/${quizQuestions.length}`;
+        } else {
+          submitBtn.textContent = "Next Question";
+        }
+      });
+
+      // Load first question on launch
+      loadQuestion();
+      updateProgress();
+    }
+  </script>
+</body>
+
+</html>

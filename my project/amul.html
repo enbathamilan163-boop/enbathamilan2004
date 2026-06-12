@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <tittle>VOTER ID CONFORMETION</tittle>
+</head>
+<body>
+    <form action="">
+        <form>
+
+            <div>
+
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+
+            </div>
+        
+           <div>
+
+                <label for="age"> Age: </label>
+                <input type="number" id="age" min="1" max="150" required>
+
+           </div>
+
+        <div>
+
+            <label for="phno">Phone Number</label>
+            <input type="tel" name="phno" id="phno">
+            
+            <p id="age-validation-message"></p> 
+            
+        </div>
+        <div>
+            <label>Gender</label>
+            <input type="radio" name="gen" id="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gen" id="female">
+            <label for="female">Female</label>
+        </div>
+    </form>
+ <table>
+    
+        <script>
+        function submitForm() {
+            const name = document.getElementById("name").value;
+            const ageInput = document.getElementById("age").value;
+            const age = parseInt(ageInput);
+
+            if (age >= 18) {
+                alert(name + " you're eligible to vote");
+            } else {
+                alert(name + " you're not eligible to vote");
+            }
+        }
+       </script>
+    <td>
+    <button onclick="submitForm()">Submit</button>
+    </td>
+    </table>
+</body>
+</html>
